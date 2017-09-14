@@ -1,10 +1,10 @@
-# Copyright 2017 Igor Dolzhikov. All rights reserved.
+# Copyright 2017 Kubernetes Community Authors. All rights reserved.
 # Use of this source code is governed by a MIT-style
 # license that can be found in the LICENSE file.
 
 APP=k8sapp
-PROJECT=github.com/takama/k8sapp
-REGISTRY?=docker.io/takama
+PROJECT=github.com/k8s-community/k8sapp
+REGISTRY?=registry.k8s.community
 CA_DIR?=certs
 
 # Use the 0.0.0 tag for testing, it shouldn't clobber any release builds
@@ -17,7 +17,7 @@ K8SAPP_LOCAL_PORT?=8080
 K8SAPP_LOG_LEVEL?=0
 
 # Namespace: dev, prod, release, cte, username ...
-NAMESPACE?=cte
+NAMESPACE?=k8s-community
 
 # Infrastructure: dev, stable, test ...
 INFRASTRUCTURE?=stable

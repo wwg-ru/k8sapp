@@ -1,9 +1,9 @@
 # Kubernetes application
 
-[![Build Status](https://travis-ci.org/takama/k8sapp.svg?branch=master)](https://travis-ci.org/takama/k8sapp)
-[![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/takama/k8sapp/issues)
-[![Go Report Card](https://goreportcard.com/badge/github.com/takama/k8sapp)](https://goreportcard.com/report/github.com/takama/k8sapp)
-[![codecov](https://codecov.io/gh/takama/k8sapp/branch/master/graph/badge.svg)](https://codecov.io/gh/takama/k8sapp)
+[![Build Status](https://travis-ci.org/k8s-community/k8sapp.svg?branch=master)](https://travis-ci.org/k8s-community/k8sapp)
+[![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/k8s-community/k8sapp/issues)
+[![Go Report Card](https://goreportcard.com/badge/github.com/k8s-community/k8sapp)](https://goreportcard.com/report/github.com/k8s-community/k8sapp)
+[![codecov](https://codecov.io/gh/k8s-community/k8sapp/branch/master/graph/badge.svg)](https://codecov.io/gh/k8s-community/k8sapp)
 
 A sample application that meets the requirements for successful execution in Kubernetes.
 
@@ -135,4 +135,4 @@ participate in the Kubernetes application project by submitting pull requests or
 
 ## License
 
-[MIT Public License](https://github.com/takama/k8sapp/blob/master/LICENSE)
+[MIT Public License](https://github.com/k8s-community/k8sapp/blob/master/LICENSE)
