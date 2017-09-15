@@ -34,9 +34,9 @@ workflow: dev
 image:
   ## Docker Registry/Hub image name and tag
   ##
-  registry: docker.io/takama
+  registry: registry.k8s.community
   name: k8sapp
-  tag: 0.3.1
+  tag: 0.3.2
 
   ## Docker Registry/Hub auth secret name, always use `registry-pull-secret` if registry inside if k8s
   ##
@@ -67,7 +67,7 @@ ingress:
   ##
   hostBased:
     hosts:
-    - k8sapp-dev.my.domain
+    - k8sapp-dev.k8s.community
 
     ## Ingress TLS configuration
     ## Secrets must be manually created in the namespace
@@ -75,7 +75,7 @@ ingress:
     tls:
     - secretName: k8sapp-secret
       hosts:
-      - k8sapp-dev.my.domain
+      - k8sapp-dev.k8s.community
 
   ## Ingress path feature allow access to service through path 
   ## example: https://hostname/namespace/servicename
@@ -83,7 +83,7 @@ ingress:
   ##
   pathBased:
     hosts:
-    - services-dev.my.domain
+    - services-dev.k8s.community
 
     ## Ingress TLS configuration
     ## Secrets must be manually created in the namespace
@@ -92,7 +92,7 @@ ingress:
     tls:
     - secretName: services-secret
       hosts:
-      - services-dev.my.domain
+      - services-dev.k8s.community
 
 service:
   ## App container name

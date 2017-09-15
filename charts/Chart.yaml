@@ -1,10 +1,10 @@
 name: k8sapp
 description: A Helm charts for Kubernetes application
-version: 0.3.1
-home: https://my.domain/
+version: 0.3.2
+home: https://k8s.community/
 sources:
-  - https://github.com/takama/k8sapp
+  - https://github.com/k8s-community/k8sapp
 maintainers:
-  - name: Igor Dolzhikov
-    email: bluesriverz@gmail.com
+  - name: Kubernetes Community Authors
+    email: k8s.community@gmail.com
 engine: gotpl

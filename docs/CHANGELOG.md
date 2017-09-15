@@ -1,6 +1,16 @@
-# Version 0.3.1
+# Version 0.3.2
 
 [Documentation](README.md)
+
+## Changelog since 0.3.1
+
+### Documentation
+
+- Changes related with account `k8s-community`: [#1](https://github.com/k8s-community/k8sapp/pull/1), [@takama](https://github.com/takama))
+
+### Configuration
+
+- Changed configuration of Makefile related with `k8s-community` account and registry [#1](https://github.com/k8s-community/k8sapp/pull/1), [@takama](https://github.com/takama))
 
 ## Changelog since 0.3.0
 
