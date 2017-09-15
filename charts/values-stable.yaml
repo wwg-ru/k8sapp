@@ -34,7 +34,7 @@ workflow: prod
 image:
   ## Docker Registry/Hub image name and tag
   ##
-  registry: docker.io/takama
+  registry: registry.k8s.community
   name: k8sapp
   tag: 0.3.1
 
@@ -67,7 +67,7 @@ ingress:
   ##
   hostBased:
     hosts:
-    - k8sapp.my.domain
+    - k8sapp.k8s.community
 
     ## Ingress TLS configuration
     ## Secrets must be manually created in the namespace
@@ -75,7 +75,7 @@ ingress:
     tls:
     - secretName: k8sapp-secret
       hosts:
-      - k8sapp.my.domain
+      - k8sapp.k8s.community
 
   ## Ingress path feature allow access to service through path 
   ## example: https://hostname/namespace/servicename
@@ -83,7 +83,7 @@ ingress:
   ##
   pathBased:
     hosts:
-    - services.my.domain
+    - services.k8s.community
 
     ## Ingress TLS configuration
     ## Secrets must be manually created in the namespace
@@ -92,7 +92,7 @@ ingress:
     tls:
     - secretName: services-secret
       hosts:
-      - services.my.domain
+      - services.k8s.community
 
 service:
   ## App container name
