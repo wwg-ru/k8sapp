@@ -23,7 +23,7 @@ NAMESPACE?=k8s-community
 INFRASTRUCTURE?=stable
 VALUES?=values-${INFRASTRUCTURE}
 
-CONTAINER_IMAGE?=${REGISTRY}/${APP}
+CONTAINER_IMAGE?=${REGISTRY}/${NAMESPACE}/${APP}
 CONTAINER_NAME?=${APP}-${NAMESPACE}
 
 REPO_INFO=$(shell git config --get remote.origin.url)
