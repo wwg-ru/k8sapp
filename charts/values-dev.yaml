@@ -36,7 +36,7 @@ image:
   ##
   registry: registry.k8s.community
   name: k8sapp
-  tag: 0.3.3
+  tag: 0.3.4
 
   ## Docker Registry/Hub auth secret name, always use `registry-pull-secret` if registry inside if k8s
   ##
@@ -117,8 +117,8 @@ service:
 ##
 resources:
   limits:
-    cpu: 30m
-    memory: 48Mi
+    cpu: 10m
+    memory: 30Mi
   requests:
-    cpu: 30m
-    memory: 48Mi
+    cpu: 10m
+    memory: 30Mi
