@@ -4,7 +4,7 @@
 
 ## Count of instances
 ##
-replicaCount: 3
+replicaCount: 2
 
 ## Count of revisions saved in release history
 ##
@@ -16,7 +16,7 @@ minReadySeconds: 10
 
 ## Value which provide max unavailable state ( percents )
 ##
-maxUnavailable: 25%
+maxUnavailable: 50%
 
 ## Max count of surge replicas
 ##
