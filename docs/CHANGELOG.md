@@ -1,6 +1,12 @@
-# Version 0.3.2
+# Version 0.3.3
 
 [Documentation](README.md)
+
+## Changelog since 0.3.2
+
+### Configuration
+
+- Changed configuration of Makefile/replicas related with namespace for `k8s-community` accounts
 
 ## Changelog since 0.3.1
 
