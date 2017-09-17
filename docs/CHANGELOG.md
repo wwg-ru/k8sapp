@@ -1,6 +1,12 @@
-# Version 0.3.3
+# Version 0.3.4
 
 [Documentation](README.md)
+
+## Changelog since 0.3.3
+
+### Configuration
+
+- CPU/Memory limits was decreased down to 10m/30Mi
 
 ## Changelog since 0.3.2
 
