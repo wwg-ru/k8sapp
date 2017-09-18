@@ -1,6 +1,12 @@
-# Version 0.3.4
+# Version 0.3.5
 
 [Documentation](README.md)
+
+## Changelog since 0.3.4
+
+### Configuration
+
+- Fixed image registry tag in respect that every account represent as namespace
 
 ## Changelog since 0.3.3
 
