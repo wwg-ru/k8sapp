@@ -1,6 +1,14 @@
-# Version 0.3.5
+# Version 0.4.0
 
 [Documentation](README.md)
+
+## Changelog since 0.3.5
+
+### Codebase
+
+- Added info handler which contains detailed statistics with HTTP codes
+- Added system signals handling (reload, shutdown, maintenance)
+- Used system signal handling and info handler
 
 ## Changelog since 0.3.4
 
