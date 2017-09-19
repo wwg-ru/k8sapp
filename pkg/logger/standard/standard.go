@@ -8,8 +8,8 @@ import (
 	"log"
 	"os"
 
-	"github.com/takama/k8sapp/pkg/config"
-	"github.com/takama/k8sapp/pkg/logger"
+	"github.com/k8s-community/k8sapp/pkg/config"
+	"github.com/k8s-community/k8sapp/pkg/logger"
 )
 
 // UTC contains default UTC suffix

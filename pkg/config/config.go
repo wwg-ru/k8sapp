@@ -5,8 +5,8 @@
 package config
 
 import (
+	"github.com/k8s-community/k8sapp/pkg/logger"
 	"github.com/kelseyhightower/envconfig"
-	"github.com/takama/k8sapp/pkg/logger"
 )
 
 const (

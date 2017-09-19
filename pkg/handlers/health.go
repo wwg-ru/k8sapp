@@ -7,7 +7,7 @@ package handlers
 import (
 	"net/http"
 
-	"github.com/takama/k8sapp/pkg/router"
+	"github.com/k8s-community/k8sapp/pkg/router"
 )
 
 // Health returns "OK" if service is alive
