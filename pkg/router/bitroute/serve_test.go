@@ -8,7 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/takama/k8sapp/pkg/router"
+	"github.com/k8s-community/k8sapp/pkg/router"
 )
 
 func getRouterForTesting() *bitroute {

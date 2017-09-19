@@ -7,7 +7,7 @@ package bitroute
 import (
 	"sort"
 
-	"github.com/takama/k8sapp/pkg/router"
+	"github.com/k8s-community/k8sapp/pkg/router"
 )
 
 const (
