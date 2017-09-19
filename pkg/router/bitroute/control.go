@@ -10,7 +10,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/takama/k8sapp/pkg/router"
+	"github.com/k8s-community/k8sapp/pkg/router"
 )
 
 type control struct {
@@ -64,6 +64,11 @@ func (c *control) Code(code int) {
 	if code >= 100 && code < 600 {
 		c.code = code
 	}
+}
+
+// GetCode shows HTTP status code that set by Code()
+func (c *control) GetCode() int {
+	return c.code
 }
 
 // Write writes data into http output.
