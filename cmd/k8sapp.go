@@ -8,8 +8,9 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/takama/k8sapp/pkg/config"
-	"github.com/takama/k8sapp/pkg/service"
+	"github.com/k8s-community/k8sapp/pkg/config"
+	"github.com/k8s-community/k8sapp/pkg/service"
+	"github.com/k8s-community/k8sapp/pkg/system"
 )
 
 func main() {
@@ -20,11 +21,17 @@ func main() {
 	}
 
 	// Configure service and get router
-	router, err := service.Setup(cfg)
+	router, logger, err := service.Setup(cfg)
 	if err != nil {
 		log.Fatal(err)
 	}
 
 	// Listen and serve handlers
-	router.Listen(fmt.Sprintf("%s:%d", cfg.LocalHost, cfg.LocalPort))
+	go router.Listen(fmt.Sprintf("%s:%d", cfg.LocalHost, cfg.LocalPort))
+
+	// Wait signals
+	signals := system.NewSignals()
+	if err := signals.Wait(logger, new(system.Handling)); err != nil {
+		logger.Fatal(err)
+	}
 }
