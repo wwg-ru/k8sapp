@@ -3,7 +3,7 @@
 # license that can be found in the LICENSE file.
 
 APP=k8sapp
-PROJECT=github.com/k8s-community/k8sapp
+PROJECT=github.com/k8s-community/${APP}
 REGISTRY?=registry.k8s.community
 CA_DIR?=certs
 
