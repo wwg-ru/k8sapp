@@ -1,6 +1,12 @@
-# Version 0.4.1
+# Version 0.4.2
 
 [Documentation](README.md)
+
+## Changelog since 0.4.1
+
+### Codebase
+
+- Fixed of creating certificate in non-existing directory
 
 ## Changelog since 0.4.0
 
