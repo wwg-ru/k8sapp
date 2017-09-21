@@ -1,6 +1,12 @@
-# Version 0.4.0
+# Version 0.4.1
 
 [Documentation](README.md)
+
+## Changelog since 0.4.0
+
+### Codebase
+
+- Implemented http.ResponseWriter interface in BitRoute Control
 
 ## Changelog since 0.3.5
 
