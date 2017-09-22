@@ -19,8 +19,9 @@ K8SAPP_LOG_LEVEL?=0
 # Namespace: dev, prod, release, cte, username ...
 NAMESPACE?=k8s-community
 
-# Infrastructure: dev, stable, test ...
+# Infrastructure (dev, stable, test ...) and kube-context for helm
 INFRASTRUCTURE?=stable
+KUBE_CONTEXT?=${INFRASTRUCTURE}
 VALUES?=values-${INFRASTRUCTURE}
 
 CONTAINER_IMAGE?=${REGISTRY}/${NAMESPACE}/${APP}
@@ -105,7 +106,7 @@ endif
 
 .PHONY: deploy
 deploy: push
-	helm upgrade ${CONTAINER_NAME} -f charts/${VALUES}.yaml charts --kube-context ${INFRASTRUCTURE} --namespace ${NAMESPACE} --version=${RELEASE} -i --wait
+	helm upgrade ${CONTAINER_NAME} -f charts/${VALUES}.yaml charts --kube-context ${KUBE_CONTEXT} --namespace ${NAMESPACE} --version=${RELEASE} -i --wait
 
 GO_LIST_FILES=$(shell go list ${PROJECT}/... | grep -v vendor)
 
