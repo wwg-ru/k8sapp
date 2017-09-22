@@ -1,6 +1,12 @@
-# Version 0.4.2
+# Version 0.4.3
 
 [Documentation](README.md)
+
+## Changelog since 0.4.2
+
+### Codebase
+
+- Fixed certs directory inside a container
 
 ## Changelog since 0.4.1
 
