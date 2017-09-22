@@ -19,7 +19,7 @@ K8SAPP_LOG_LEVEL?=0
 # Namespace: dev, prod, release, cte, username ...
 NAMESPACE?=k8s-community
 
-# Infrastructure: dev, stable, test ... and 
+# Infrastructure (dev, stable, test ...) and kube-context for helm
 INFRASTRUCTURE?=stable
 KUBE_CONTEXT?=${INFRASTRUCTURE}
 VALUES?=values-${INFRASTRUCTURE}
