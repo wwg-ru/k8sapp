@@ -34,7 +34,7 @@ workflow: dev
 image:
   ## Docker Registry/Hub image name and tag
   ##
-  registry: registry.k8s.community
+  registry: registry.grahovac.me
   name: k8sapp
   tag: 0.4.4
 
