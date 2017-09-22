@@ -1,6 +1,12 @@
-# Version 0.4.3
+# Version 0.4.4
 
 [Documentation](README.md)
+
+## Changelog since 0.4.3
+
+### Configuration
+
+- Used separate infrastructure and kube-context variables [#4](https://github.com/k8s-community/k8sapp/pull/4), [@rumyantseva](https://github.com/rumyantseva))
 
 ## Changelog since 0.4.2
 
