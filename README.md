@@ -1,3 +1,5 @@
+Test release branch
+
 # Kubernetes application
 
 [![Build Status](https://travis-ci.org/k8s-community/k8sapp.svg?branch=master)](https://travis-ci.org/k8s-community/k8sapp)
